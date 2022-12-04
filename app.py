@@ -27,8 +27,10 @@ def main():
         value=30,
     )
 
+    status_area = st.empty()
+
     if st.button("処理の実行"):
-        x = bul_image_maker(height, width, times)
+        x = bul_image_maker(height, width, times, status_area)
         st.image(x)
 
 

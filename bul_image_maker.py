@@ -5,7 +5,7 @@ import numpy as np
 import streamlit as st
 
 
-def bul_image_maker(height: int, width: int, times: int) -> None:
+def bul_image_maker(height: int, width: int, times: int, status_area) -> None:
 
     """
     ランダム + 累積和で画像を作って表示する
@@ -22,8 +22,6 @@ def bul_image_maker(height: int, width: int, times: int) -> None:
     coef_list = [random.choice([-1, 1]) for i in range(times)]
 
     im = np.zeros((height, width))
-
-    status_area = st.empty()
 
     for time in range(times):
 
