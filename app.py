@@ -1,5 +1,5 @@
 import streamlit as st
-from sbul_image_maker import bul_image_maker
+from bul_image_maker import bul_image_maker
 
 
 def main():
