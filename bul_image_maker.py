@@ -25,7 +25,7 @@ def bul_image_maker(height: int, width: int, times: int, status_area) -> None:
 
     for time in range(times):
 
-        status_area.write(f"{time}/{times}")
+        status_area.write(f"{time+1}/{times}")
 
         H_start = random.randint((random.randint(1, H - 3)), H - 2)
         H_end = H_start
