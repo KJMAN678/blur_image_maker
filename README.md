@@ -9,6 +9,10 @@ app_file: app.py
 pinned: false
 ---
 
+## アプリ
+
+- [こちら](https://huggingface.co/spaces/KJMAN678/blur_image_maker)
+
 ## ファイル構成
 
 - app.py streamlit でのアプリ実装部分
