@@ -2,6 +2,7 @@ import random
 
 import matplotlib.pyplot as plt
 import numpy as np
+import streamlit as st
 
 
 def bul_image_maker(height: int, width: int, times: int) -> None:
@@ -20,11 +21,11 @@ def bul_image_maker(height: int, width: int, times: int) -> None:
 
     coef_list = [random.choice([-1, 1]) for i in range(times)]
 
-    result = np.zeros((height, width, 3))
-
     im = np.zeros((height, width))
 
     for time in range(times):
+
+        st.write(f"{time}/times")
 
         H_start = random.randint((random.randint(1, H - 3)), H - 2)
         H_end = H_start
